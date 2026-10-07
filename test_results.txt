@@ -1,0 +1,25 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.16, pytest-9.1.1, pluggy-1.6.0
+cachedir: .pytest_cache
+rootdir: .../game-glitch-investigator
+configfile: pytest.ini
+testpaths: tests
+collecting ... collected 15 items
+
+tests/test_game_logic.py::test_winning_guess PASSED                      [  6%]
+tests/test_game_logic.py::test_guess_too_high PASSED                     [ 13%]
+tests/test_game_logic.py::test_guess_too_low PASSED                      [ 20%]
+tests/test_game_logic.py::test_too_high_hint_says_go_lower PASSED        [ 26%]
+tests/test_game_logic.py::test_too_low_hint_says_go_higher PASSED        [ 33%]
+tests/test_game_logic.py::test_single_digit_guess_against_two_digit_secret PASSED [ 40%]
+tests/test_game_logic.py::test_two_digit_guess_against_single_digit_secret PASSED [ 46%]
+tests/test_game_logic.py::test_hard_range_is_wider_than_normal PASSED    [ 53%]
+tests/test_game_logic.py::test_parse_valid_number PASSED                 [ 60%]
+tests/test_game_logic.py::test_parse_empty_and_text_are_rejected PASSED  [ 66%]
+tests/test_game_logic.py::test_parse_decimal_is_rejected PASSED          [ 73%]
+tests/test_game_logic.py::test_parse_out_of_range_is_rejected PASSED     [ 80%]
+tests/test_game_logic.py::test_wrong_guesses_never_add_points PASSED     [ 86%]
+tests/test_game_logic.py::test_first_try_win_scores_90 PASSED            [ 93%]
+tests/test_game_logic.py::test_win_score_has_a_floor_of_10 PASSED        [100%]
+
+============================== 15 passed in 0.01s ==============================
